@@ -5,6 +5,8 @@ Breakout PCB for connecting external stepper/servo motor drivers.
 - Display reads out supplied voltage for redundency.
 - Pinout is simple and single-ended. Assuming motor driver takes step/pulse, direction, and enable. Currently no support for HLFB.
 
+![front-assembled-cropped](https://github.com/user-attachments/assets/9d1d43e0-372c-438a-952b-bc24c8646ce1)
+
 - Digital pins are taken from SC1 and step/dir header of the Archimajor board:
   
 ![image](https://github.com/user-attachments/assets/98ef0128-522f-4c9b-a7da-07c0bb58ca75)
@@ -45,3 +47,10 @@ Breakout PCB for connecting external stepper/servo motor drivers.
     - A+ = PB24
     - B+ = PD1
     - EN+ = PD3
+   
+  
+![front-unassembled-cropped](https://github.com/user-attachments/assets/9900f2fd-8072-47cb-9daa-128b22201bdc)
+![back-unassembled-cropped](https://github.com/user-attachments/assets/485a08bc-153b-49b2-8298-fa6163decd0b)
+
+
+
