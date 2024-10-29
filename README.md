@@ -7,7 +7,10 @@ Breakout PCB for connecting external stepper/servo motor drivers.
 
 - Digital pins are taken from SC1 and step/dir header of the Archimajor board:
   
-![SC12](https://github.com/user-attachments/assets/ce56fb87-2f87-4e5e-9f87-fcc8cab8da99)
+![image](https://github.com/user-attachments/assets/98ef0128-522f-4c9b-a7da-07c0bb58ca75)
+
+![image](https://github.com/user-attachments/assets/1b9e29fe-ac2a-4671-ba15-a7308e59a37b)
+
 
 - Design is made to primarily support Teknic Clearpath SD series motors.
 
