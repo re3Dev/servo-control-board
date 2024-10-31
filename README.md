@@ -7,9 +7,10 @@ Breakout PCB for connecting external stepper/servo motor drivers.
 
 ![front-assembled-cropped](https://github.com/user-attachments/assets/9d1d43e0-372c-438a-952b-bc24c8646ce1)
 
-- Digital pins are taken from SC1 and step/dir header of the Archimajor board:
+- Digital pins are taken from Serial 5V+, SC1, SC2, and step/dir header of the Archimajor board:
   
-![image](https://github.com/user-attachments/assets/98ef0128-522f-4c9b-a7da-07c0bb58ca75)
+![image](https://github.com/user-attachments/assets/04bdadf2-e713-45ca-bb30-8d890d52a729)
+
 
 ![image](https://github.com/user-attachments/assets/1b9e29fe-ac2a-4671-ba15-a7308e59a37b)
 
