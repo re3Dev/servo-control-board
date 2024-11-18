@@ -39,16 +39,26 @@ Breakout PCB for connecting external stepper/servo motor drivers.
   - Motor3:
     - A+ = PB12
     - B+ = PA5
-    - EN+ = PB6
+    - EN+ = PB25
   - Motor4:
-    - A+ = PB8
-    - B+ = PB26
-    - EN+ = PB3
+    - A+ = PB27
+    - B+ = PA3
+    - EN+ = PB6
   - Motor5:
-    - A+ = PB24
-    - B+ = PD1
-    - EN+ = PD3
-   
+    - A+ = PB8
+    - B+ = PB22
+    - EN+ = PB3
+  - Motor6:
+    - A+ = PD3
+    - B+ = PB24
+    - EN+ = PB26
+  - Motor7:
+    - A+ = PA8
+    - B+ = PA9
+    - EN+ = PC8
+ - I/O pin:
+   - PD4
+  
   
 ![front-unassembled-cropped](https://github.com/user-attachments/assets/9900f2fd-8072-47cb-9daa-128b22201bdc)
 ![back-unassembled-cropped](https://github.com/user-attachments/assets/485a08bc-153b-49b2-8298-fa6163decd0b)
