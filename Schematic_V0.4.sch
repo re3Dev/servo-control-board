@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="0" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -1011,6 +1011,7 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <part name="J12" library="2024-10-15_17-21-56_Library" deviceset="YK3310403000G" device="CONN_YK331040XX00G_AMP"/>
 <part name="PD3" library="2024-10-01_17-12-49_Library" library_urn="urn:adsk.wipprod:fs.file:vf.HfG1cDN6QHG3WBjtERmYvQ" deviceset="MIC2981/82YN" device="PDIP18_N_MCH"/>
 <part name="J8" library="6130XX11121_61300311121" deviceset="6130XX11121_61300311121" device="" value=" 61300311121 "/>
+<part name="J1" library="6130XX11121_61300311121" deviceset="6130XX11121_61300311121" device="" value=" 61300311121 "/>
 </parts>
 <sheets>
 <sheet>
@@ -1077,6 +1078,10 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <attribute name="NAME" x="-40.64" y="-148.082" size="1.778" layer="95" rot="R180" align="bottom-right"/>
 <attribute name="VALUE" x="-40.64" y="-144.78" size="1.778" layer="96" rot="R180" align="bottom-right"/>
 </instance>
+<instance part="J1" gate="G$1" x="-104.14" y="-167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="-99.06" y="-165.862" size="1.778" layer="95" rot="R180" align="bottom-right"/>
+<attribute name="VALUE" x="-99.06" y="-162.56" size="1.778" layer="96" rot="R180" align="bottom-right"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1104,8 +1109,9 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <junction x="25.4" y="-25.4"/>
 <pinref part="PD1" gate="A" pin="GND"/>
 <pinref part="MOTOR7" gate="A" pin="6"/>
-<wire x1="119.38" y1="-101.6" x2="0" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-101.6" x2="20.32" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="0" y="-101.6"/>
+<wire x1="20.32" y1="-101.6" x2="0" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="-101.6" x2="119.38" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="119.38" y="-101.6"/>
 <pinref part="MOTOR7" gate="A" pin="7"/>
@@ -1178,6 +1184,12 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <label x="30.48" y="45.72" size="1.778" layer="95" xref="yes"/>
 <wire x1="-5.08" y1="-106.68" x2="-5.08" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="J12" gate="A" pin="3"/>
+<junction x="20.32" y="-101.6"/>
+<wire x1="20.32" y1="-101.6" x2="20.32" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-175.26" x2="-116.84" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-175.26" x2="-116.84" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-162.56" x2="-106.68" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="VIN+" class="0">
@@ -1200,13 +1212,18 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <pinref part="PD1" gate="A" pin="VS"/>
 <junction x="-2.54" y="-109.22"/>
 <junction x="-2.54" y="-101.6"/>
-<wire x1="-2.54" y1="-101.6" x2="-43.18" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-101.6" x2="-20.32" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-101.6" x2="-43.18" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="-101.6" x2="-43.18" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="1"/>
 <label x="-15.24" y="-101.6" size="1.778" layer="95" xref="yes"/>
 <wire x1="-2.54" y1="-109.22" x2="-7.62" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-109.22" x2="-7.62" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="J12" gate="A" pin="4"/>
+<pinref part="J8" gate="G$1" pin="1"/>
+<junction x="-20.32" y="-101.6"/>
+<wire x1="-20.32" y1="-101.6" x2="-20.32" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-162.56" x2="-101.6" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PC2" class="0">
@@ -1702,8 +1719,8 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <wire x1="-144.78" y1="73.66" x2="-144.78" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="-134.62" x2="-45.72" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="-134.62" x2="-45.72" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="2"/>
 <label x="-55.88" y="-134.62" size="1.778" layer="95" xref="yes"/>
+<pinref part="J8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND2" class="0">
@@ -1715,8 +1732,18 @@ Updated by Ella Wu 2021-12-08&lt;BR&gt;
 <wire x1="-149.86" y1="78.74" x2="-149.86" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="-139.7" x2="-48.26" y2="-139.7" width="0.1524" layer="91"/>
 <wire x1="-48.26" y1="-139.7" x2="-48.26" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="3"/>
 <label x="-66.04" y="-139.7" size="1.778" layer="95" xref="yes"/>
+<pinref part="J8" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="PD2" gate="A" pin="OUT8"/>
+<wire x1="15.24" y1="-22.86" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-22.86" x2="30.48" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-154.94" x2="-104.14" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-154.94" x2="-104.14" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

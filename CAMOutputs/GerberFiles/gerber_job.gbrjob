@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2024-10-31T16:36:40Z",
+        "CreationDate": "2026-03-13T17:33:44Z",
         "GenerationSoftware": {
             "Application": "Fusion Electronics",
             "Vendor": "Autodesk",
@@ -13,7 +13,7 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "re3D Servo Control Board V0.3 v2"
+            "ProjectId": "re3D Servo Control Board V0.4 v16"
         },
         "Owner": "Mitchell Mashburn <mitchell@re3d.org>",
         "Size": {
